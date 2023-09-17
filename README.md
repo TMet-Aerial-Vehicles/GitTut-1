@@ -71,7 +71,9 @@ Next, switch back to the ~ directory, and enter the command: ```git clone https:
 You will notice that there is an issue with the script in the repo. Once you find it, proceed to <a href="https://github.com/TMet-Aerial-Vehicles/GitTut-2/issues">https://github.com/TMet-Aerial-Vehicles/GitTut-2/issues</a> or the issue page on the repo, and create an issue regarding what you find in the code.
 Issues in github are usually used for tracking bugs, and new features for projects. <br> 
 Simply title the issue relating to the bug, and provide comments describing what the issue is. <br>
-Once created, you will need to make a new branch for the issue under the relevant section. Then, fetch the updated repo, and change to the new branch (Upon creating a branch for the issue, github will provide the relevant commands.)
+Once created, you will need to make a new branch for the issue under the development section of the issue page. Then, fetch the updated repo using: <br>
+
+```git fetch origin```, and change to the new branch using: ```git checkout <branchname>``` where \<branchname\> is the name of the branch you created for the issue. (Upon creating a branch for the issue, github will provide the relevant commands. Simply select "checkout locally")
 
 Now, remember the add, commit, push loop from earlier? modify the script to function properly, and repeat the add-commit-push loop to upload the updated code to the repo. You will then need to create a pull request.
 
