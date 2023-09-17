@@ -3,16 +3,16 @@
 Git, a version control software for programming, <br>and BASH, the basic shell used in linux, unix, and mac systems.
 By the end of this tutorial, you will be able to:</p>
 <ul>
-<li>Comfortably Navgiate the Linux File System from the shell</li> done
-<li>Create files, and edit them using either nano or vim.</li> done
-<li>Modify the permission level of files to ensure they can be executed</li> done
-<li>Source files to modify the environement</li> tbd
-<li>Install and log-into github on a linux instance</li> done
-<li>Initialize a Local github repository</li> done
-<li>Clone a remote Repository</li> done
-<li>Create branches for your own development</li> done
-<li>Add and Commit changes to a local branch, and Push them to a remote repository</li> done
-<li>Create and merge pull requests with the main branch to update the code base</li> tbd
+<li>Comfortably Navgiate the Linux File System from the shell</li> 
+<li>Create files, and edit them using either nano or vim.</li> 
+<li>Modify the permission level of files to ensure they can be executed</li> 
+<li>Source files to modify the environement</li> 
+<li>Install and log-into github on a linux instance</li> 
+<li>Initialize a Local github repository</li> 
+<li>Clone a remote Repository</li> 
+<li>Create branches for your own development</li> 
+<li>Add and Commit changes to a local branch, and Push them to a remote repository</li> 
+<li>Create and merge pull requests with the main branch to update the code base</li> 
 </ul>
 Before you start, ensure you have created an account on GitHub, and a lead has added you to the team repository. Without access to the team repository, you will not be able to complete the tutorial. This tutorial assumes you will be running in a linux environement. Ensure you either have a Linux running in a virtual machine, your main operating system, or in WSL (Windows Subsystem for Linux).
 
@@ -77,7 +77,17 @@ Once created, you will need to make a new branch for the issue under the develop
 
 Now, remember the add, commit, push loop from earlier? modify the script to function properly, and repeat the add-commit-push loop to upload the updated code to the repo. You will then need to create a pull request.
 
-Pull requests are requests to merge your changes with the main branch of code. 
+Pull requests are requests to merge your changes with the main branch of code. To create a pull request, visit the repository page. Since you recently pushed a new branch, github should provide a UI to take you to the compare and pull request tab. Please click the button to do so.
+Next, simply click the create pull request button on the following page. Normally, reasoning and a good title are requied in practice, but for the sake of brevety, we skip this part. Note that we will reject your pull request, as the code must stay broken for future users.<br><br>
+
+Congratualations! you've finished the TMAV GitHub and Linux tutorial! But uh, <em>one last thing...</em><br>
+The Linux shell runs a startup script for every new terminal instance you open. It will be very important to modify this later for using ROS.
+To modify it, enter ```nano ~/.bashrc``` and head to the very end of the file. Once there, type: ```echo "Hello $USER"``` then save.
+to actually view these updates, you can either source the bash script using ```source ~/.bashrc``` or simply open a new terminal instance. Your computer should now greet you in every terminal.
+<br><br>
+Alright, that's it. For real this time. Now go forth and code!
+
+
 
 
 
